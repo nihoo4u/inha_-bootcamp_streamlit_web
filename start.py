@@ -19,4 +19,4 @@ folium.Marker([37.42637222,126.9898],
               popup='junyeon',
               tooltip='junyeon').add_to(m)
 st_data=st_folium(m,width=725)
-st_data
+
