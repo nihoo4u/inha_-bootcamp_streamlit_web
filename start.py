@@ -55,17 +55,18 @@
 # if __name__ == '__main__':
 #     st.run()
 
+# import sys
+# import matplotlib
 
+# print("Python executable:", sys.executable)
+# print("Matplotlib version:", matplotlib.__version__)
+
+import streamlit as st
 import matplotlib.pyplot as plt
 
-xdata = [1,2, 3,4]
-ydata = [10 ,5 ,20 ,35]
-#그래프12
-plt.plot(xdata , ydata)
-plt.show()
-#막대형 그래프
-plt.bar(xdata , ydata)
-plt.show()
-#90도 회전한 막대 그래프
-plt.barh(xdata ,ydata)
-plt.show()
+xdata = [1, 2, 3, 4]
+ydata = [10, 5, 20, 35]
+
+fig, ax = plt.subplots()
+ax.plot(xdata, ydata)
+st.pyplot(fig)
