@@ -60,7 +60,7 @@ import matplotlib.pyplot as plt
 
 xdata = [1,2, 3,4]
 ydata = [10 ,5 ,20 ,35]
-#그래프
+#그래프12
 plt.plot(xdata , ydata)
 plt.show()
 #막대형 그래프
