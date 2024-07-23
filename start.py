@@ -20,20 +20,6 @@
 # #               tooltip='junyeon').add_to(m)
 # # st_data=st_folium(m,width=725)
 
-# import streamlit as st
-# import pandas as pd
-# import matplotlib.pyplot as plt
-
-# # Load data
-# file_path = 'weather_real대전.csv'
-# df = pd.read_csv(file_path)
-
-# # Convert '시간' column to datetime format
-# df['시간'] = pd.to_datetime(df['시간'])
-
-# # Sidebar for user input
-# st.sidebar.title("Weather Data Visualization")
-# selected_columns = st.sidebar.multiselect('Select columns to plot', df.columns, default=['기온', '강수량', '풍속', '습도'])
 
 # # Main panel
 # st.title("Weather Data Analysis")
@@ -70,3 +56,5 @@ ydata = [10, 5, 20, 35]
 fig, ax = plt.subplots()
 ax.plot(xdata, ydata)
 st.pyplot(fig)
+
+
